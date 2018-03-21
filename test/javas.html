@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> The First Example: Hello, World </title>
+    </head>
+   
+    <body>
+        <script language="JavaScript"> 
+            document.write("JavaScript");
+            var i = 0;
+            var timer;
+            function count() {
+                alert(i);
+                i++;
+                timer = setTimeout("count()" , 1000);
+            }
+        </script> 
+        <form>
+            <input type="button" value="Pop-up an alert box" onClick="alert('Hi, I am alert box.')">
+        </form>
+        <form>
+            <input type="button" value="Pop-up an confirm box"
+            onClick="var reply = confirm('Are you sure?') ; alert(reply)">
+        </form>
+        <form>
+            <input type="button" value="Ask me a question"
+            onClick=" var name = prompt('What is your name?.' , 'You name here') ; alert('Hi, ' + name) ">
+        </form>
+        <form>
+            <input type="button" value="Open new window"
+            onClick=" window.open('http://www.yahoo.com','winname','location,menubar=1 status,toolbar,scrollbars=0')">
+        </form>
+        <form>
+             <input type="button" value="Timer start"
+             onClick="count()">
+        </form>
+        <form>
+             <input type="button" value="Timer stop"
+             onClick="clearTimeout(timer)">
+        </form>
+        <a href="http://taiwantc.com/js/index.html">½ÌŒW1</a><br>
+        <a href="http://www.w3school.com.cn/jsref/jsref_events.asp">½ÌŒW2</a>
+    </body>
+</html>

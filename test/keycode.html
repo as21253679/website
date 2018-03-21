@@ -1,0 +1,18 @@
+<html>
+<body>
+<h1 id="1">Key</h1>
+<script type="text/javascript">
+   var realkey;
+   var keycode;
+   document.onkeydown = keyDown;
+   function keyDown(e) {
+   　　keycode= e.which;
+   　　realkey = String.fromCharCode(e.which);
+   　　//alert("keycode: " + keycode + " realkey: " + realkey);
+       var x=document.getElementById("1");
+       x.innerHTML=realkey;
+   }
+</script>
+
+</body>
+</html>

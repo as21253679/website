@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>澎湖在地博物館-後端管理系統</title>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+  <link href="css/back.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="back.html">澎湖在地博物館</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="login.html">登出</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="back.html">活動公告</a></li>
+            <li><a href="back-attractions.html">景點介紹</a></li>
+            <li class="active"><a href="back-farmer.html">小農專區</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <form>
+              <div class="form-group">
+
+                <div class="divButton btn btn-danger">
+                  <a href="back.html" style="color: #FFF">
+                  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>&nbsp;取消</a>
+                </div>
+                
+                <span style="float: right">
+                  <button type="submit" class="btn btn-success">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;儲存
+                  </button>
+                </span>
+              </div>
+              <div class="form-group">
+                <label for="back-Creat-Header">小農市集</label>
+                <input type="text" class="form-control" id="back-Creat-Header" placeholder="請輸入市集名稱">
+              </div>
+              <div class="form-group">
+                <label for="back-Creat-content">市集資訊</label>
+                <textarea class="form-control" rows="15" id="back-Creat-content" placeholder="請輸入市集資訊(包含舉辦時程)"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">市集照片(當封面用)</label>
+                <input type="file" id="exampleInputFile">
+              </div>
+            </form>  
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

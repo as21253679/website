@@ -1,0 +1,26 @@
+.wrap{
+  margin:3em 2em; /*上下0px 左右2em*/
+   /*border: 3px solid #d9444a;  */
+}
+.farmer-info-img{
+	float:left;
+	width:80%;
+}
+.farmer-info-img-sup{
+	float:left;
+	width:10%;
+}
+.farmer-block{
+	margin: 15px 0px;
+}
+.farmer-block-title{
+	font-weight:bold;
+	text-align: center;
+	margin: 10px 0px;
+}
+.farmer-entry{
+	margin-top: 1em;
+}
+.farmer-info{
+	margin-top: 1em;
+}
