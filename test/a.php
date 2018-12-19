@@ -1,13 +1,11 @@
-﻿<?php session_start(); ?>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
-</head>
-<body>
+<?php
+    $apiKey = '<paste your API key here>';
+    $url = 'https://www.googleapis.com/language/translate/v2/languages?key=' . $apiKey;
 
-<form action="/login.php" method="POST">
-  帳號: <input type="text" name="user1"><br>
-  密碼: <input type="password" name="password1"><br>
-  <input type="submit" value="登入">
-  <input type="button" value="註冊新會員" onClick="location.href='/register.html'">
-</form>
-</body>
+    $handle = curl_init($url);
+    curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);     //We want the result to be saved into variable, not printed out
+    $response = curl_exec($handle);                         
+    curl_close($handle);
+
+    print_r(json_decode($response, true));
+?>
